@@ -1,0 +1,8 @@
+---
+kind: wasmer.io/App.v0
+name: jcbhmr-hello-world-javascript-wasmer-app
+package: jcbhmr/hello-world-javascript-wasmer-app@0.1.12
+cli_args:
+  - /workspace-dist/index.js
+debug: false
+app_id: da_NnzrI7tJUapn

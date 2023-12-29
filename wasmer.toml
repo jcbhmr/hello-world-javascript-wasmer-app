@@ -1,0 +1,19 @@
+[package]
+name = "jcbhmr/hello-world-javascript-wasmer-app"
+version = "0.1.12"
+description = "🟨 JavaScript HTTP server compiled to WASM and running on Wasmer!"
+
+[dependencies]
+"wasmer/winterjs" = "*"
+
+[fs]
+"/workspace-dist" = "./dist"
+
+[[command]]
+name = "script"
+module = "wasmer/winterjs:wasmer-winter"
+runner = "https://webc.org/runner/wasi"
+
+[command.annotations.wasi]
+env = ["JS_PATH=/workspace-dist/index.js"]
+main-args = ["/workspace-dist/index.js"]

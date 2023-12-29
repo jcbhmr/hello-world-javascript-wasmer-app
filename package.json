@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "dependencies": {
+    "urlpattern-polyfill": "npm:urlpattern-polyfill-no-unicode@^7.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  },
+  "scripts": {
+    "build": "vite build"
+  }
+}
