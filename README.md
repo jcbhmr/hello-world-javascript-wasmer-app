@@ -21,7 +21,13 @@
 ![WebAssembly](https://img.shields.io/static/v1?style=for-the-badge&message=WebAssembly&color=654FF0&logo=WebAssembly&logoColor=FFFFFF&label=)
 ![Wasmer](https://img.shields.io/static/v1?style=for-the-badge&message=Wasmer&color=4946DD&logo=Wasmer&logoColor=FFFFFF&label=)
 
-There's still some rough edges of the WinterJS runtime. 🤷‍♀️
+There's still some rough edges of the WinterJS runtime. 🤷‍♀️ If something doesn't
+work, make sure it's not just the runtime being silly. To do development you can
+use something like this to test the server locally:
+
+```sh
+wasmer run . --net
+```
 
 <!-- prettier-ignore-start -->
 [0bsd licensed]: https://github.com/jcbhmr/hello-world-javascript-wasmer-app/blob/main/LICENSE
