@@ -1,6 +1,6 @@
 [package]
 name = "jcbhmr/hello-world-javascript-wasmer-app"
-version = "0.1.13"
+version = "0.1.14"
 description = "🟨 JavaScript HTTP server compiled to WASM and running on Wasmer!"
 
 [dependencies]
