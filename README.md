@@ -13,7 +13,7 @@
 ❄️ Uses the [WinterJS] WASM-based JavaScript runtime \
 🟪 Uses the Wasmer app platform \
 👷‍♂️ Lets you write service worker JavaScript code for the server \
-👩‍⚖️ [0BSD licensed] template
+👩‍⚖️ [0BSD licensed](./LICENSE) template
 
 ## Development
 
@@ -29,7 +29,4 @@ use something like this to test the server locally:
 wasmer run . --net
 ```
 
-<!-- prettier-ignore-start -->
-[0bsd licensed]: https://github.com/jcbhmr/hello-world-javascript-wasmer-app/blob/main/LICENSE
 [winterjs]: https://github.com/wasmerio/winterjs
-<!-- prettier-ignore-end -->
