@@ -1,0 +1,31 @@
+name: wasmer deploy
+on:
+  push:
+    branches: "main"
+    paths-ignore:
+      - .gitignore
+      - LICENSE
+      - README.md
+  workflow_dispatch:
+concurrency: ${{ github.workflow }}
+jobs:
+  wasmer-deploy:
+    permissions:
+      contents: write
+    environment:
+      name: wasmer
+      url: https://jcbhmr-hello-world-rust-wasmer-app.wasmer.app/
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: wasmerio/setup-wasmer@v3
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: wasmer deploy --publish-package
+        env:
+          WASMER_TOKEN: ${{ secrets.WASMER_TOKEN }}
+      - uses: actions4git/add-commit-push@v1
