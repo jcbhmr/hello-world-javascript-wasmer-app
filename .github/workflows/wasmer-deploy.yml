@@ -14,7 +14,7 @@ jobs:
       contents: write
     environment:
       name: wasmer
-      url: https://jcbhmr-hello-world-rust-wasmer-app.wasmer.app/
+      url: https://jcbhmr-hello-world-javascript-wasmer-app.wasmer.app/
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
